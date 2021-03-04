@@ -13,6 +13,7 @@ int main()
    cout<< "4. kelvin to celsius" << endl;
    cout<< "5.Fahrenheit to kelvin" << endl;
   cout<< "6. kelvin to Fahrenheit" << endl;
+   cout<< "7. fun facts about this" << endl;
    cin >> option; 
 
    //option for converting celsius into fahernheit
@@ -72,7 +73,18 @@ int main()
    }
    
    
+   else if (option == '7')
+   {
+      cout << "This has over 90 lines of code" << endl; 
+      cout<< "It took me several hours to make" << endl;
+      cout<< "after I coded the first part, it was just a matter of copying,"<<endl; cout<<"pasting,and tweaking the code"<< endl;
    
+   
+   
+   
+  
+  
+  }
    else
       cout << "Error Wrong Input or, this display is a glitch." << endl;
 
