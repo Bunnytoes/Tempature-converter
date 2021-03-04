@@ -1,0 +1,80 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   float fahr, cel, kelvin;
+   char option;
+
+   cout << "Choose from following option:" << endl;
+   cout << "1. Celsius to Fahrenheit." << endl;
+   cout << "2. Fahrenheit to Celsius." << endl;
+   cout<< "3. celsius to kelvin." << endl; 
+   cout<< "4. kelvin to celsius" << endl;
+   cout<< "5.Fahrenheit to kelvin" << endl;
+  cout<< "6. kelvin to Fahrenheit" << endl;
+   cin >> option; 
+
+   //option for converting celsius into fahernheit
+   if (option == '1')
+   {
+      cout << "Enter the temperature in Celsius: ";
+      cin >> cel;
+
+      fahr = (1.8 * cel) + 32.0; //temperature conversion formula
+      cout << "Temperature in degree Fahrenheit:\n " << fahr << " F" << endl;
+   }
+   //option for converting Fahrenheit into Celsius
+   else if (option == '2')
+   {
+      cout << "Enter the temperature in Fahrenheit: ";
+      cin >> fahr;
+
+      cel = (fahr - 32) / 1.8; //temperature conversion formula
+      cout << "Temperature in degree Celsius:\n " << cel << " C" << endl;
+   }
+   //option for converting celsius into kelvin
+   if (option == '3')
+   {
+      cout << "Enter the temperature in Celsius: ";
+      cin >> cel;
+
+      kelvin = (273.15 + cel); //temperature conversion formula
+      cout << "Temperature in degree kelvin:\n " << kelvin << "K" << endl;
+   }
+   //option for converting kelvin into Celsius
+   else if (option == '4')
+   {
+      cout << "Enter the temperature in kelvin: ";
+      cin >> cel;
+
+      cel = (kelvin - 273.15); //temperature conversion formula
+      cout << "Temperature in degree Celsius:\n " << cel << " C" << endl;
+   }
+   //option for converting celsius into kelvin
+   if (option == '5')
+   {
+      cout << "Enter the temperature in Fahrenheit: ";
+      cin >> fahr;
+
+      kelvin = (fahr - 32) * 0.55555555556 + 273.15; //temperature conversion formula
+      cout << "Temperature in degree kelvin:\n " <<  + kelvin << "K" << endl;
+   }
+   
+   //option for converting kelvin into Celsius
+   else if (option == '6')
+   {
+      cout << "Enter the temperature in kelvin: ";
+      cin >> fahr;
+
+      fahr = (kelvin - 273.15) * 1.8 + 32; //temperature conversion formula
+      cout << "Temperature in degree fahrenheit:\n " << fahr << " F" << endl;
+   }
+   
+   
+   
+   else
+      cout << "Error Wrong Input or, this display is a glitch." << endl;
+
+   return 0;
+}
